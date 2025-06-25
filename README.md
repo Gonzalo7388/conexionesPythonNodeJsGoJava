@@ -18,10 +18,8 @@ El objetivo de este proyecto fue demostrar la interacción con una base de datos
 
 ---
 
-## Estructura del Proyecto
-
+Estructura del Proyecto
 El repositorio está organizado por lenguajes, con cada subdirectorio conteniendo su proyecto respectivo:
-
 
 conexionesPythonNodeJsGoJava/
 ├── .gitignore
@@ -43,7 +41,6 @@ conexionesPythonNodeJsGoJava/
 │   ├── main.py
 │   └── requirements.txt (opcional, si se usó)
 └── README.md
----
 
 ## Requisitos Previos
 
