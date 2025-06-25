@@ -18,9 +18,10 @@ El objetivo de este proyecto fue demostrar la interacción con una base de datos
 
 ---
 
-Estructura del Proyecto
+## Estructura del Proyecto
 El repositorio está organizado por lenguajes, con cada subdirectorio conteniendo su proyecto respectivo:
 
+```bash
 conexionesPythonNodeJsGoJava/
 ├── .gitignore
 ├── proyectoGo/
@@ -41,6 +42,7 @@ conexionesPythonNodeJsGoJava/
 │   ├── main.py
 │   └── requirements.txt (opcional, si se usó)
 └── README.md
+```
 
 ## Requisitos Previos
 
@@ -141,17 +143,17 @@ Los índices fueron creados y gestionados directamente a través de `mongosh`. A
 db.estudiantes.createIndex({ nombre: 1 });
 db.estudiantes.createIndex({ carrera: 1 });
 db.estudiantes.createIndex({ semestre: -1 });
-
+```
 
 **2. Índices Compuestos:**
 
-
+```
 db.estudiantes.createIndex({ edad: 1, matriculado: 1 });
 db.estudiantes.createIndex({ "contacto.email": 1, "contacto.telefono": 1 });
 db.estudiantes.createIndex({ carrera: 1, "cursos_actuales.nombre_curso": 1 });
-
+```
 **1. Índices Únicos y Parciales:**
-
+```
 // Este requirió resolver duplicados para { matriculado: true, "contacto.telefono": "987654321" }
 db.estudiantes.createIndex(
   { "contacto.telefono": 1 },
@@ -170,3 +172,4 @@ db.estudiantes.createIndex(
   { nombre: 1, edad: 1 },
   { unique: true, partialFilterExpression: { carrera: "Arquitectura" } }
 );
+```
