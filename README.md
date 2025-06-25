@@ -21,27 +21,28 @@ El objetivo de este proyecto fue demostrar la interacción con una base de datos
 ## Estructura del Proyecto
 
 El repositorio está organizado por lenguajes, con cada subdirectorio conteniendo su proyecto respectivo:
+
+
 conexionesPythonNodeJsGoJava/
 ├── .gitignore
 ├── proyectoGo/
-│   └── main.go
-│   └── go.mod
+│   ├── main.go
+│   ├── go.mod
 │   └── go.sum
 ├── proyectoJava/
 │   └── mongodemo/
-│       └── pom.xml
-│       └── src/
-│       └── mvnw
+│       ├── pom.xml
+│       ├── src/
+│       ├── mvnw
 │       └── mvnw.cmd
 ├── proyectoNodeJs/
-│   └── index.js
-│   └── package.json
+│   ├── index.js
+│   ├── package.json
 │   └── package-lock.json
 ├── proyectoPython/
-│   └── main.py
+│   ├── main.py
 │   └── requirements.txt (opcional, si se usó)
 └── README.md
-
 ---
 
 ## Requisitos Previos
